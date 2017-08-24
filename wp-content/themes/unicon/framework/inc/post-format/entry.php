@@ -15,7 +15,8 @@
             <?php } else { ?>
                 <h1><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__('Permalink to %s', 'minti'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
             <?php } ?>
-        </div> <?php the_breadcrumb();?>
+      <?php the_breadcrumb();?>
+        </div> 
 
         <?php if(is_single()){ ?>
         <div class="entry-meta">
