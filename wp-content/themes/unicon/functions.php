@@ -25,6 +25,28 @@ if (class_exists('WPBakeryVisualComposerAbstract')) {
 	// }
 }
 
+function the_breadcrumb() {
+    if (!is_front_page()) {
+        echo '<a href="';
+        echo get_option('home');
+        echo '">Главная';
+        echo "</a> » ";
+        if (is_category() || is_single()) {
+            the_category(' ');
+            if (is_single()) {
+                echo " » ";
+                the_title();
+            }
+        } elseif (is_page()) {
+            echo the_title();
+        }
+    }
+    else {
+        echo 'Home';
+    }
+}
+
+
 /* ------------------------------------------------------------------------ */
 /* Redux */
 if ( !class_exists( 'redux' ) && file_exists( dirname( __FILE__ ) . '/framework/admin/ReduxCore/framework.php' ) ) {
