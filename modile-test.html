@@ -1,0 +1,9 @@
+<html>
+<body>
+<script>
+var connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+var type = connection.type;
+document.write(JSON.stringify(type));
+</script>
+</body>
+</html>
