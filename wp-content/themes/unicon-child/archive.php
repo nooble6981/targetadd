@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div id="page-wrap" class="blog-page blog-medium container">
-	<p><?php single_cat_title('Вы просматриваете: '); ?>.</p>
+	<h1 class="archive-title"><?php single_cat_title(); ?></h1>
 	<div id="content" class="sidebar-right twelve alt columns">
 
 		<?php if (is_author()) { ?>
