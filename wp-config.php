@@ -30,7 +30,7 @@
 define( 'WPCACHEHOME', '/var/www/html/wp-content/plugins/wp-super-cache/' ); //Added by WP-Cache Manager
 define('DB_NAME', 'targead');
 /** MySQL database username */
-define('DB_USER', 'root');
+define('DB_USER', 'root1');
 
 /** MySQL database password */
 define('DB_PASSWORD', 'urj&eUjfh@6');
