@@ -6,6 +6,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
     
 
+    
     <div class="entry-wrap">
 
         <div class="entry-title">
@@ -21,8 +22,7 @@
             <?php get_template_part( 'framework/inc/meta' ); ?>
         </div>
         <?php } ?>
-    <?php } ?>
-  <?php if (!is_single() || (is_single() && get_post_meta( get_the_ID(), 'minti_hideimage', true ) == false)) { ?>
+            <?php if (!is_single() || (is_single() && get_post_meta( get_the_ID(), 'minti_hideimage', true ) == false)) { ?>
         <?php if ( has_post_thumbnail() ) { ?>
         <div class="entry-image">
             <?php if(is_single()){ ?>
@@ -38,6 +38,7 @@
         </div>
         <?php } ?>
     <?php } ?>
+
         <div class="entry-content">
             <?php if(!is_single()){ ?>
                 <?php echo wp_kses_post(minti_custom_excerpt(50)); ?>
@@ -50,7 +51,8 @@
         <div class="entry-meta">
             <?php get_template_part( 'framework/inc/meta' ); ?>
         </div>
-    
+        <?php } ?>
+
     </div>
 
 </article><!-- #post -->
