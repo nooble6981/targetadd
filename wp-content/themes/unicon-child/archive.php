@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div id="page-wrap" class="blog-page blog-medium container">
-	
+	<?php single_cat_title; ?>
 	<div id="content" class="sidebar-right twelve alt columns">
 
 		<?php if (is_author()) { ?>
