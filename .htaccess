@@ -11,9 +11,8 @@ RewriteRule . /index.php [L]
 
 # END WordPress
 
-
-RewriteCond %{HTTP_HOST} ^www\.targetad\.com
-RewriteRule ^(.*)$ http://targetad.com/$1 [R=permanent,L]
-
-RewriteCond %{HTTP:X-HTTPS} !1
-RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+RewriteEngine On
+RewriteCond %{HTTP:HTTPS} !on [NV]
+RewriteRule ^(.*)$ https://www.targetad.com/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule ^(.*)$ https://targetad.com/$1 [R=301,L]
