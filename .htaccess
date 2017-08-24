@@ -13,6 +13,6 @@ RewriteRule . /index.php [L]
 
 RewriteEngine On
 RewriteCond %{HTTP:HTTPS} !on [NV]
-RewriteRule ^(.*)$ https://www.targetad.com/$1 [R=301,L]
+RewriteRule ^(.*)$ https://www.targead.com/$1 [R=301,L]
 RewriteCond %{HTTP_HOST} !^www\.
-RewriteRule ^(.*)$ https://targetad.com/$1 [R=301,L]
+RewriteRule ^(.*)$ https://targead.com/$1 [R=301,L]
