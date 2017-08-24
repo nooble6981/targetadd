@@ -1917,7 +1917,9 @@ div#check-out-offer div.right-area > a:first-of-type {
 
 } /*END 470px*/
 
-
+.current-cat {
+font-weight: bold;
+}
 
 
 /*------------------------------------------------------------- END MEDIA QUERIES ---------------------------------------------------------------*/
