@@ -36,8 +36,6 @@
             <?php get_template_part( 'framework/inc/meta' ); ?>
         </div>
         <?php } ?>
-
-    </div>
   <?php if (!is_single() || (is_single() && get_post_meta( get_the_ID(), 'minti_hideimage', true ) == false)) { ?>
         <?php if ( has_post_thumbnail() ) { ?>
         <div class="entry-image">
@@ -54,4 +52,6 @@
         </div>
         <?php } ?>
     <?php } ?>
+    </div>
+
 </article><!-- #post -->
