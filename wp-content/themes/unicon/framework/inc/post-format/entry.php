@@ -21,20 +21,7 @@
             <?php get_template_part( 'framework/inc/meta' ); ?>
         </div>
         <?php } ?>
-
-        <div class="entry-content">
-            <?php if(!is_single()){ ?>
-                <?php echo wp_kses_post(minti_custom_excerpt(50)); ?>
-            <?php } else { ?>
-                <?php the_content(); ?>
-            <?php } ?>
-        </div>
-        
-        <?php if(!is_single()){ ?>
-        <div class="entry-meta">
-            <?php get_template_part( 'framework/inc/meta' ); ?>
-        </div>
-        <?php } ?>
+    <?php } ?>
   <?php if (!is_single() || (is_single() && get_post_meta( get_the_ID(), 'minti_hideimage', true ) == false)) { ?>
         <?php if ( has_post_thumbnail() ) { ?>
         <div class="entry-image">
@@ -51,6 +38,19 @@
         </div>
         <?php } ?>
     <?php } ?>
+        <div class="entry-content">
+            <?php if(!is_single()){ ?>
+                <?php echo wp_kses_post(minti_custom_excerpt(50)); ?>
+            <?php } else { ?>
+                <?php the_content(); ?>
+            <?php } ?>
+        </div>
+        
+        <?php if(!is_single()){ ?>
+        <div class="entry-meta">
+            <?php get_template_part( 'framework/inc/meta' ); ?>
+        </div>
+    
     </div>
 
 </article><!-- #post -->
