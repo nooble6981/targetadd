@@ -1422,6 +1422,10 @@ body.archive div.featured-image a:hover img {
   opacity: .75;
 }
 
+.current-cat {
+font-weight: bold;
+}
+
 /*------------------------------------------------------------- END ARCHIVE ---------------------------------------------------------------*/
 
 div#respond-inputs {
@@ -1917,9 +1921,7 @@ div#check-out-offer div.right-area > a:first-of-type {
 
 } /*END 470px*/
 
-.current-cat {
-font-weight: bold;
-}
+
 
 
 /*------------------------------------------------------------- END MEDIA QUERIES ---------------------------------------------------------------*/
