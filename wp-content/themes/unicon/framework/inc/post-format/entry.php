@@ -8,14 +8,14 @@
 
     
     <div class="entry-wrap">
-
+ <?php the_breadcrumb();?>
         <div class="entry-title">
             <?php if(!is_single()){ ?>
                 <h2><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__('Permalink to %s', 'minti'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
             <?php } else { ?>
                 <h1><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__('Permalink to %s', 'minti'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
             <?php } ?>
-      <?php the_breadcrumb();?>
+     
         </div> 
 
         <?php if(is_single()){ ?>
