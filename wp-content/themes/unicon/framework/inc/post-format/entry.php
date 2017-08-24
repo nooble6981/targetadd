@@ -1,3 +1,11 @@
+ <?php if(!is_single()){ ?>
+ <style>
+ header#header {
+    display: none;
+ }
+ </style>
+  <?php } ?>
+
 <div class="post-time">
     <span class="month"><?php the_time('M'); ?></span>
     <span class="day"><?php the_time('d'); ?></span>
