@@ -27,10 +27,6 @@ if (class_exists('WPBakeryVisualComposerAbstract')) {
 
 function the_breadcrumb() {
     if (!is_front_page()) {
-        echo '<a href="';
-        echo get_option('home');
-        echo '">Главная';
-        echo "</a> » ";
         if (is_category() || is_single()) {
             the_category(' ');
             if (is_single()) {
