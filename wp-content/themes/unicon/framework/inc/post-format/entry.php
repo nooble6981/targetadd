@@ -5,8 +5,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
     
-  
-    
+
     <div class="entry-wrap">
 
         <div class="entry-title">
