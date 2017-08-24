@@ -1733,6 +1733,13 @@ body #mobile-navigation li.open > a [class^="fa-"]{
     border-radius: 2px;
     overflow: hidden;
     position: relative;
+}
+
+
+.entry-image-post{
+    border-radius: 2px;
+    overflow: hidden;
+    position: relative;
     max-width: 400px;
     float: right;
 }

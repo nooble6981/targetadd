@@ -33,7 +33,7 @@
         <?php } ?>
             <?php if (!is_single() || (is_single() && get_post_meta( get_the_ID(), 'minti_hideimage', true ) == false)) { ?>
         <?php if ( has_post_thumbnail() ) { ?>
-        <div class="entry-image">
+        <div class="entry-image-post">
             <?php if(is_single()){ ?>
                 <?php $thumb_url = wp_get_attachment_image_src(get_post_thumbnail_id(),'full', true); ?>
                 <a href="<?php echo esc_url($thumb_url[0]); ?>" title="<?php the_title(); ?>" class="prettyPhoto" rel="bookmark">
