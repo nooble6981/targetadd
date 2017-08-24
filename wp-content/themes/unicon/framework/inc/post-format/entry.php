@@ -5,7 +5,18 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
     
-    <?php if (!is_single() || (is_single() && get_post_meta( get_the_ID(), 'minti_hideimage', true ) == false)) { ?>
+  
+    
+    <div class="entry-wrap">
+
+        <div class="entry-title">
+            <?php if(!is_single()){ ?>
+                <h2><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__('Permalink to %s', 'minti'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+            <?php } else { ?>
+                <h1><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__('Permalink to %s', 'minti'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
+            <?php } ?>
+        </div>
+  <?php if (!is_single() || (is_single() && get_post_meta( get_the_ID(), 'minti_hideimage', true ) == false)) { ?>
         <?php if ( has_post_thumbnail() ) { ?>
         <div class="entry-image">
             <?php if(is_single()){ ?>
@@ -21,17 +32,6 @@
         </div>
         <?php } ?>
     <?php } ?>
-    
-    <div class="entry-wrap">
-
-        <div class="entry-title">
-            <?php if(!is_single()){ ?>
-                <h2><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__('Permalink to %s', 'minti'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-            <?php } else { ?>
-                <h1><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__('Permalink to %s', 'minti'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
-            <?php } ?>
-        </div>
-
         <?php if(is_single()){ ?>
         <div class="entry-meta">
             <?php get_template_part( 'framework/inc/meta' ); ?>
