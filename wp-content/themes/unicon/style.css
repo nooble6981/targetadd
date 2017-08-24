@@ -1376,6 +1376,7 @@ body #mobile-navigation li.open > a [class^="fa-"]{
     position: relative;
     clear: both;
     float: none;
+    z-index: 10000000000;
 }
 
 /* Dark Header Class --------------- */

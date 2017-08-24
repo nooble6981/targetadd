@@ -1359,8 +1359,7 @@ body.archive div.day {
   font-weight: bold;
 }
 body.archive h1 {
-  margin-bottom: 15px;
-  margin-top: 26px;
+  margin-top: -43px;
 }
 body.archive h1.entry-title a{
   color: #444;
